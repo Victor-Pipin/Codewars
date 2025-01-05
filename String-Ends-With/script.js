@@ -12,3 +12,5 @@
 // if the first argument(string) passed in ends with the 2nd argument (also a string).
 
 // ✅SOLUTION:
+
+function isStringEndingsEqual() {}
