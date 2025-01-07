@@ -13,4 +13,14 @@
 
 // ✅SOLUTION:
 
-function isStringEndingsEqual() {}
+function isStringEndingsEqual() {
+    const reversedString = string.split('').reverse().join('')
+    const reversedEnding = ending.split('').reverse().join('')
+    const trimmedReversedString = reversedString.slice(0, reversedEnding.length)
+
+    if (reversedEnding !== trimmedReversedString) {
+        return false
+    }
+
+    return true
+}
