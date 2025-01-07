@@ -14,7 +14,7 @@
 
 // ✅SOLUTION:
 
-function isStringEndingsEqual(string, ending) {
+function customEndsWith(string, ending) {
     const reversedString = string.split('').reverse().join('')
     const reversedEnding = ending.split('').reverse().join('')
     const trimmedReversedString = reversedString.slice(0, reversedEnding.length)
@@ -26,9 +26,8 @@ function isStringEndingsEqual(string, ending) {
     return true
 }
 
-// 📈REFACTORING:
+// 📈REFACTOR:
 
-function isStringEndingsEqual(string, ending) {
+function customEndsWith(string, ending) {
     return string.endsWith(ending)
-    
 }
