@@ -41,5 +41,25 @@
 
 // ✅SOLUTION:
 
+function logicalCalculator(array, operator) {
+    let result
+    
+    if (operator === 'OR') {
+        result = array[0] || array[1];
+    } else if (operator === 'AND') {
+        result = array[0] && array[1];
+    }
+    
+    for (let i = 2; i < array.length; i++) {
+        if (operator === 'OR') {
+            result = result || array[i]
+        } else if (operator === 'AND') {
+            result = result && array[i]
+        }
+    }
+
+    return result
+}
+
 
 // 📈REFACTOR:
