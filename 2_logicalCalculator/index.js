@@ -48,6 +48,8 @@ function logicalCalculator(array, operator) {
         result = array[0] || array[1];
     } else if (operator === 'AND') {
         result = array[0] && array[1];
+    } else if (operator === 'XOR') {
+        result = array[0] ^ array[1];
     }
     
     for (let i = 2; i < array.length; i++) {
@@ -55,6 +57,8 @@ function logicalCalculator(array, operator) {
             result = result || array[i]
         } else if (operator === 'AND') {
             result = result && array[i]
+        } else if (operator === 'XOR') {
+            result = Boolean(result ^ array[i])
         }
     }
 
