@@ -42,17 +42,9 @@
 // ✅SOLUTION:
 
 function logicalCalculator(array, operator) {
-    let result
+    let result = array[0]
     
-    if (operator === 'OR') {
-        result = array[0] || array[1];
-    } else if (operator === 'AND') {
-        result = array[0] && array[1];
-    } else if (operator === 'XOR') {
-        result = array[0] ^ array[1];
-    }
-    
-    for (let i = 2; i < array.length; i++) {
+    for (let i = 1; i < array.length; i++) {
         if (operator === 'OR') {
             result = result || array[i]
         } else if (operator === 'AND') {
@@ -64,6 +56,5 @@ function logicalCalculator(array, operator) {
 
     return result
 }
-
 
 // 📈REFACTOR:
