@@ -63,5 +63,3 @@ function logicalCalculator(array, operator) {
 }
 
 // 📈REFACTOR:
-
-// Добавить коментарии
