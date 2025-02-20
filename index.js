@@ -1,2 +1,0 @@
-
-function replaceAllVowel(string) {}
