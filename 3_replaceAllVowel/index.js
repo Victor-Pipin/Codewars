@@ -26,6 +26,21 @@
 
 // ✅SOLUTION:
 
-function replaceAllVowel (string) {}
+function replaceAllVowel (string) {
+    let replacedVowelsStr = ''
+
+    const arrayFromString = string.split('')
+
+    for (let char of arrayFromString) {
+        if ((char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u' 
+        || char === 'A' || char === 'E' || char === 'I' || char === 'O' || char === 'U')) {
+            char = '!'
+        }
+
+        replacedVowelsStr += char
+    }
+
+    return replacedVowelsStr
+}
 
 // 📈REFACTOR:
