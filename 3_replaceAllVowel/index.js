@@ -53,3 +53,21 @@ function replaceAllVowel (string) {
 }
 
 // 📈REFACTOR:
+
+function replaceAllVowel(string) {
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+    let replacedVowelsStr = ''
+
+    const arrayFromString = string.split('')
+
+    for (let char of arrayFromString) {
+        if (vowels.includes(char)) {
+            char = '!'
+        }
+
+        replacedVowelsStr += char
+    }
+
+    return replacedVowelsStr
+}
